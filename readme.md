@@ -10,4 +10,26 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+### Docker
+
+To start the app, you need to have Docker installed. Please follow the instructions for your OS:
+
+- [Mac](https://docs.docker.com/docker-for-mac/install/)
+- [Windows](https://docs.docker.com/docker-for-windows/install/)
+- [Linux](https://docs.docker.com/engine/install/)
+- [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+- [Debian](https://docs.docker.com/engine/install/debian/)
+
+### Environment variables
+
+The app uses environment variables to configure the backend. You can find the list of variables in the [backend readme](backend/README.md).
+
+## Running the app
+
+To start the app, run the following command:
+
+```bash
+docker-compose up
+```
+
+This will start the frontend, backend, and the db. The frontend will be available at http://localhost:3000 and the backend at http://localhost:3001.
